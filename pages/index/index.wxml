@@ -1,0 +1,33 @@
+<view class="container">
+<!-- 地区选择器，区域一 -->
+  <picker mode='region' bindchange="changeRegion">
+    <view>{{region}}</view>
+  </picker>
+  <!-- 区域二，显示温度 -->
+  <text>{{now.tmp}}℃{{now.cond_txt}}</text>
+  <!-- 区域三 图片插入 -->
+  <image src='/images/{{now.cond_code}}.png'></image>
+  <!-- 多行天气信息 -->
+  <view class="detail">
+    <view class="every">
+      <view class="box">湿度</view>
+      <view class="box">气压</view>
+      <view class="box">能见度</view>
+    </view>
+    <view class="every">
+      <view class="box">{{now.hum}}%</view>
+      <view class="box">{{now.pres}}hpa</view>
+      <view class="box">{{now.vis}}km</view>
+    </view>
+    <view class="every">
+      <view class="box">风向</view>
+      <view class="box">风速</view>
+      <view class="box">风力</view>
+    </view>
+    <view class="every">
+      <view class="box">{{now.wind_dir}}</view>
+      <view class="box">{{now.wind_spd}} km/h</view>
+      <view class="box">{{now.wind_sc}}级</view>
+    </view>
+  </view>
+</view>

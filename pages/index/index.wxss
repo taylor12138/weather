@@ -1,0 +1,28 @@
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.detail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.every{
+  display: flex;
+  margin:20rpx 0;
+  /* 不知道没有有用 */
+}
+.box{
+  width: 33.3%;
+  text-align: center;
+}
+text{
+  font-size:80rpx;
+  color: #c99330;
+}
+image{
+  width: 100%;
+}
